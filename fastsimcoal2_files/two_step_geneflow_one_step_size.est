@@ -1,0 +1,19 @@
+// Search ranges and rules file
+// ****************************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  $NPOP0$	unif	1000	1000000	output
+1  $NPOP1$	unif	1000	1000000	output
+1  $NCHG0$	unif	1000	1000000	output
+1  $NCHG1$	unif	1000	1000000	output
+1  $NANC$	unif	1000	1000000	output 
+1  $TDIV$	unif	250000	1700000	output bounded
+1  $TMIG1$	unif	1	$TDIV$	output paramInRange
+0  $0MIG01$	logunif	1e-21	1e-2	output  
+0  $0MIG10$	logunif	1e-21	1e-2	output
+0  $1MIG01$	logunif	1e-21	1e-2	output  
+0  $1MIG10$	logunif	1e-21	1e-2	output 
+
+[COMPLEX PARAMETERS]
